@@ -3,10 +3,22 @@ plugins {
     id 'me.champeau.jmh' version '0.6.6'
 }
 
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(11)
+    }
+}
+
 group 'io.shirohoo'
 
 repositories {
     mavenCentral()
+}
+
+jmh {
+    fork = 1
+    warmupIterations = 1
+    iterations = 1
 }
 
 dependencies {
