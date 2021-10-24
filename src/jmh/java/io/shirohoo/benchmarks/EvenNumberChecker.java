@@ -1,11 +1,14 @@
 package io.shirohoo.benchmarks;
 
+import java.util.concurrent.TimeUnit;
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.BenchmarkMode;
 import org.openjdk.jmh.annotations.Mode;
+import org.openjdk.jmh.annotations.OutputTimeUnit;
 import org.openjdk.jmh.infra.Blackhole;
 
 @BenchmarkMode(Mode.Throughput)
+@OutputTimeUnit(TimeUnit.NANOSECONDS)
 public class EvenNumberChecker {
 
     @Benchmark
