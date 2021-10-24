@@ -17,8 +17,10 @@ repositories {
 
 jmh {
     fork = 1
-    warmupIterations = 1
-    iterations = 1
+    warmupIterations = 3
+    iterations = 3
+    verbosity = 'EXTRA'
+    humanOutputFile = project.file("${project.buildDir}/reports/jmh/human.txt")
 }
 
 dependencies {
