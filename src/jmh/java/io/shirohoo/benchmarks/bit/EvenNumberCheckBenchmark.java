@@ -1,4 +1,4 @@
-package io.shirohoo.benchmarks;
+package io.shirohoo.benchmarks.bit;
 
 import java.util.concurrent.TimeUnit;
 import org.openjdk.jmh.annotations.Benchmark;
@@ -9,7 +9,7 @@ import org.openjdk.jmh.infra.Blackhole;
 
 @BenchmarkMode(Mode.Throughput)
 @OutputTimeUnit(TimeUnit.NANOSECONDS)
-public class EvenNumberChecker {
+public class EvenNumberCheckBenchmark {
 
     @Benchmark
     public void isEvenNumber(Blackhole bh) {

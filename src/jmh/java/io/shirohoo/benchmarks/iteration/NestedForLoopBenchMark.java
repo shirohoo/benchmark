@@ -1,4 +1,4 @@
-package io.shirohoo.benchmarks;
+package io.shirohoo.benchmarks.iteration;
 
 import java.math.BigDecimal;
 import org.openjdk.jmh.annotations.Benchmark;
@@ -14,10 +14,10 @@ NestedForLoop.nested_for_loop_1  thrpt    3  0.072 ± 0.029  ops/s
 NestedForLoop.nested_for_loop_2  thrpt    3  0.073 ± 0.038  ops/s
 
  */
-public class NestedForLoop {
+public class NestedForLoopBenchMark {
 
     /*
-    Result "io.shirohoo.benchmarks.NestedForLoop.nested_for_loop_1":
+    Result "io.shirohoo.benchmarks.iteration.NestedForLoop.nested_for_loop_1":
       0.072 ±(99.9%) 0.029 ops/s [Average]
       (min, avg, max) = (0.070, 0.072, 0.073), stdev = 0.002
       CI (99.9%): [0.043, 0.100] (assumes normal distribution)
@@ -34,7 +34,7 @@ public class NestedForLoop {
     }
 
     /*
-    Result "io.shirohoo.benchmarks.NestedForLoop.nested_for_loop_2":
+    Result "io.shirohoo.benchmarks.iteration.NestedForLoop.nested_for_loop_2":
       0.073 ±(99.9%) 0.038 ops/s [Average]
       (min, avg, max) = (0.070, 0.073, 0.074), stdev = 0.002
       CI (99.9%): [0.034, 0.111] (assumes normal distribution)
